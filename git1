@@ -1,0 +1,41 @@
+/*This CSS has been tested with the new "Look and Feel" blank template*/
+
+/*Page Padding*/
+.Skin .SkinInner{padding-right: 30px; padding-left: 30px; padding-top: 30px;}
+
+/*Font*/
+body, .Skin, .Skin #Buttons #NextButton, .Skin #Buttons #PreviousButton, .Skin #Buttons #NextButton:hover,
+.Skin #Buttons #NextButton:focus, .Skin #Buttons #PreviousButton:hover, .Skin #Buttons #PreviousButton:focus
+{font-family: Helvetica, Arial, sans-serif !important;}
+
+/*Buttons - colors (standard and on mouseover)*/
+.Skin #Buttons #NextButton, .Skin #Buttons #PreviousButton {background-color: #b8b8b8;}
+.Skin #Buttons #NextButton:hover, .Skin #Buttons #NextButton:focus, .Skin #Buttons #PreviousButton:hover, .Skin #Buttons #PreviousButton:focus{background: #7a7a7a;}
+
+/*Progress bar (ProgressBarFill is the "filled-in" color; ProgressBarFillContainer is the "unfilled" background color)*/
+.Skin .ProgressBarFill{background-color: #4994CB;}
+.Skin #ProgressBarFillContainer, .Skin .ProgressBarFillContainer{background: #ebebeb;}
+
+/*Padding around the questions*/
+.Skin .QuestionText{padding-top:40px;}
+.Skin .QuestionBody{padding-bottom:20px;}
+
+/*Radio Un-Selected border*/
+.Skin label.q-checkbox,.Skin label.q-radio{border:2px solid #4994CB;}
+/*Radio Selected box around selected and internal fill*/
+.Skin label.q-checkbox.q-focused,.Skin label.q-radio.q-focused{outline:#000 dotted thin}
+.Skin label.q-radio.q-checked.q-focused{background-color:#83BBE2}
+/*Radio Selected internal fill after you've moved on*/
+.Skin label.q-radio.q-checked{background-color:#4994CB;}
+
+
+
+/*DID NOT WORK*/
+.Skin label.q-checkbox.q-checked{background-color:#f7e116;}
+.Skin label.q-checkbox.q-checked.q-focused{background-color:#f79d16}
+.Skin .TE textarea:focus,.Skin input.TextEntryBox:focus,.Skin input[type=text]:focus,.Skin input[type=password]:focus,.Skin input[type=search]:focus,.Skin select:focus,.Skin textarea:focus{border-color:#0c5ff0;}
+.Skin .PGR .DragAndDrop .rank,.Skin .RO .DND .rank{background-color:#f70f0f;color:#fff}
+.Skin .RO .DND .rank,.Skin .RO .DND ul.Edited .rank,.Skin .RO .DND ul.NotEdited li:hover .rank{background:#f7a20f;color:#fff}
+.Skin .HBAR .trackHolderRel .track:hover,.Skin .HBAR .trackHolderRel.activated .track{border-color:#ebe70c}
+.Skin .SB input,.Skin .SS .horizontalbar .handle,.Skin .SS .verticalbar .SSTrack .handle,.Skin .horizontalbar .BarContainer:hover .bar,.Skin .horizontalbar .Slider .handle,.Skin .horizontalbar .activated .bar{background:#f00ce1}
+.Skin .SS .horizontalbar .handle:hover,.Skin .horizontalbar .Slider .handle:hover{background-color:#2ced09;}
