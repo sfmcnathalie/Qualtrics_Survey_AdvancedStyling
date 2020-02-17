@@ -17,7 +17,7 @@
 <table cellpadding="0" cellspacing="0" width="100%">
 	<tbody>
 		<tr>
-			<td class="m-padding-bottom-5" style="padding-bottom:20px"><img src="https://aarpmarketing.iad1.qualtrics.com/CP/Graphic.php?IM=IM_3EgVQoS45g1lK29" style="width: 353px; height: 60px;" /><br />
+			<td class="m-padding-bottom-5" style="padding-bottom:20px"><img src="image.jpeg" style="width: 353px; height: 60px;" /><br />
 			&nbsp;</td>
 		</tr>
 		<tr>
