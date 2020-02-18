@@ -33,9 +33,9 @@ body, .Skin, .Skin #Buttons #NextButton, .Skin #Buttons #PreviousButton, .Skin #
 
 /*Question Copy*/
 .Skin .QuestionText {
-    font-size: 20px; color: #6F6362;  padding: 20px;  line-height: 1.6em; }
+    font-size: 20px; color: #6F6362;  padding: 20px 0px;  line-height: 1.6em; }
     @media all and (max-width: 768px) {
-      .Skin .QuestionText { padding: 15px; } }
+      .Skin .QuestionText { padding: 15px 5px; } }
  /*Answer Copy*/       
   .Skin .QuestionBody {
     color: #6F6362; font-size: 18px; overflow-y: hidden; padding: 0 20px 20px 20px; position: relative; z-index: 1; }
