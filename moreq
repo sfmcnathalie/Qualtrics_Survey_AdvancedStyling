@@ -1,0 +1,96 @@
+/*Hide Next or Back Buttons*/
+Qualtrics.SurveyEngine.addOnload(function()
+{
+$('NextButton').hide();
+});
+
+
+/*Change Constant Sum fields to be blank instead of pre-filled zeroes*/
+Qualtrics.SurveyEngine.addOnload(function()
+{
+jQuery("#"+this.questionId+" li input[type=text]").val("");
+});
+
+
+/*CSS to only appear on one page*/
+<style id="HideMyId">
+/*INACTIVE CSS
+#MyID {
+   display: none !important;
+ }
+*/
+</style>
+pageService.toggleStylesheet = function(activate, id) {
+ if (!document.getElementById(id)) {return false;}
+  if (activate) {
+    document.getElementById(id).innerHTML = document.getElementById(id).innerHTML.replace( '/*INACTIVE CSS', '/*ACTIVE CSS*/');
+  } else {
+    document.getElementById(id).innerHTML = document.getElementById(id).innerHTML.replace( '/*ACTIVE CSS*/', '/*INACTIVE CSS');
+  }
+};
+
+
+/*Lazy Load font*/
+
+var fontService = {
+  addCssToHead: function(url) {
+    var cssId = btoa(url);
+    if (!document.getElementById(cssId)) {
+      var iframe = document.getElementById('Preview_iframe');
+      var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+        var head  = innerDoc.getElementsByTagName('head')[0];
+        var link  = innerDoc.createElement('link');
+        link.id   = cssId;
+        link.rel  = 'stylesheet';
+        link.type = 'text/css';
+        link.href = url;
+        head.appendChild(link);
+    }
+  },
+  parseFontFromUrl: function(url) {
+    //find font name
+    var font = url.split('family=')[1];
+    if (font) {
+      //remove any size options
+      if (font.indexOf(':') > -1) {
+        font = font.split(':')[0];
+      }
+      //multiword font names have +s instead of ' 's
+      font = font.replace(/+/g, ' ');
+      if (font.indexOf('|') > -1) {
+        // only load the first font if multiple in URL
+        fontArray = font.split('|');
+        font = '';
+        for (var i = 0; i < fontArray.length; i++) {
+          font += "'" + fontArray[i] + "',";
+        }
+        font = font.slice(0, -1);
+      }
+      return font;
+    }
+  },
+  apply: function(font) {
+    // there may be other elements that need targetting here
+    jQuery('.QuestionBody').css('font-family',font);
+    jQuery('.QuestionText').css('font-family',font);
+    jQuery('#NextButton').css('font-family',font);
+    jQuery('#PreviousButton').css('font-family',font);
+    jQuery('#Header').css('font-family',font);
+    jQuery('#Footer').css('font-family',font);
+    jQuery('.Skin #Plug a').css('font-family',font);
+  }
+}
+
+jQuery('#QID1 input').first().click(function() {
+  var url = jQuery('#QID1 input').first().val();
+  fontService.addCssToHead(url);
+  var font = fontService.parseFontFromUrl(url);
+  fontService.apply();
+});
+
+
+/*Background Image*/
+#SurveyEngineBody {
+  background: url("<myUrl>") no-repeat center center;
+  background-size: cover;
+}
