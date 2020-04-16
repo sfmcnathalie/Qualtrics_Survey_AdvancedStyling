@@ -41,7 +41,3 @@
       .Skin #Buttons #NextButton:active, .Skin #Buttons #PreviousButton:active {
         background: #EE352A;
         border-color: #EE352A; } }
-
-/*button alignment*/
-.Skin #Buttons {text-align:center;}
-
