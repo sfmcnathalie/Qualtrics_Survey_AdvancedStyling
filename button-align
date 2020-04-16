@@ -1,0 +1,9 @@
+/*button alignment*/
+.Skin #Buttons {text-align:center;}
+
+
+/*Use case - To target one specific button (e.g. the last one, to finish the survey) add it in a style tag in the Question Text of a question on the last page (use HTML Mode)*/
+
+<style>
+.Skin #Buttons {text-align:center;}
+</style>
