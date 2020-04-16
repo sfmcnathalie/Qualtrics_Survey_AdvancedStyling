@@ -1,0 +1,15 @@
+default-text-in-a-response-that-disappears-when-clicked-on
+
+Option1: 
+<script>
+Qualtrics.SurveyEngine.addOnload(function() {   
+        jQuery("textarea").attr("placeholder","Enter your comments here.");
+});
+</script>
+
+Option2:
+<script>
+Qualtrics.SurveyEngine.addOnload(function() {
+jQuery("#"+this.questionId+" .InputText").attr("placeholder", "My placeholder text");
+});
+</script>
