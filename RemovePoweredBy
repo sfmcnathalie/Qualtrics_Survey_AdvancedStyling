@@ -5,3 +5,4 @@ var plug = document.getElementById("Plug"); //Get the Defined element
 plug.style.cssText += ';display:none !important;'; //Set the defined element's display style to "none"
 });
 </script>
+ 
