@@ -1,0 +1,5 @@
+Add this to the custom css in the Look and Feel section
+
+#Logo{
+display: none;
+}
