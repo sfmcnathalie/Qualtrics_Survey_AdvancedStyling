@@ -1,0 +1,14 @@
+Scenario 1:  validate that answer is text-only, no spaces, and less than 10 length
+Solution: 
+Use "match regex" in custom validation and put this in validation text entry box:
+^[A-Za-z]{1,9}$
+
+The respondent will be only allowed to move to next question if they enter at least one and at most 9 characers in text box 
+and characters can only be small and capital letters.
+
+
+Scenario 2: Validate Address has been fully submitted - Street2 is not required
+Solution: 
+Click Blue text at bottom of your form = "Click here to edit form fields" & edit validation/forced response
+Do not select "Forced Response" in Right menu
+Do not select Validation in Right Menu
