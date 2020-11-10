@@ -1,0 +1,14 @@
+/*Java script editor*/
+
+var questionId = this.questionId;
+ var choiceInputs = $$('#'+this.questionId + ' .ChoiceStructure input');
+for (var i=0; i < choiceInputs.length; i++)
+ {var choiceInput = choiceInputs[i]; try
+ {if (choiceInput && choiceInput.parentNode)
+ {choiceInput.parentNode.appendChild(QBuilder('span',{},'hrs'));
+ }
+ }
+ catch(e)
+ {
+ }
+ }
