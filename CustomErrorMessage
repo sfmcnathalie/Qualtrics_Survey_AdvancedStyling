@@ -1,0 +1,15 @@
+/*place in JS Editor -- Note: this does not replace the regular message - if you put it in the question text it will
+add your text above the question that was causing the problem.*/
+
+var customErrorMessage = 'Write your message here';
+ var question = $(this.questionId);
+ if (question)
+ {
+ question.cleanWhitespace();
+ $(question).select('.ValidationError').each(function(s){
+ if (s.innerHTML != '')
+ {
+ s.innerHTML = customErrorMessage;
+ }
+ });
+ }
