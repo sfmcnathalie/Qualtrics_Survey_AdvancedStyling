@@ -1,0 +1,36 @@
+/*This code only works when placed in the source view - rich text editor select source <>*/
+
+<link rel="stylesheet" type="text/css"
+href="http://yui.yahooapis.com/2.7.0/build/calendar/assets/skins/sam/calendar.css">
+<script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/yahoo-domevent/yahoo-dom-event.js"></script>
+<script type="text/javascript"
+src="http://yui.yahooapis.com/2.7.0/build/calendar/calendar-min.js"></script>
+<script>
+Qualtrics.SurveyEngine.addOnload(function ()
+{
+ var qid = this.questionId;
+ var calid = qid + '_cal';
+ var y = QBuilder('div');
+ $(y).setStyle({clear:'both'});
+ var d = QBuilder('div',{className:'yui-skin-sam'},[
+ QBuilder('div', {id:calid}),
+ y
+ ]);
+
+ var c = this.questionContainer;
+ c = $(c).down('.QuestionText');
+ c.appendChild(d);
+ var cal1 = new YAHOO.widget.Calendar(calid);
+ cal1.render();
+ var input = $('QR~' + qid);
+ $(input).setStyle({marginTop: '20px',width: '150px'});
+ var p =$(input).up();
+ var x = QBuilder('div');
+ $(x).setStyle({clear:'both'});
+ p.insert(x,{position:'before'});
+ cal1.selectEvent.subscribe(function(e,dates){
+ var date = dates[0][0];
+ input.value = date[1] +'-'+date[2]+'-'+date[0];
+})
+});
+</script>
