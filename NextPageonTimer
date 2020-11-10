@@ -1,0 +1,7 @@
+var displayTime = 2;
+if($('NextButton'))$('NextButton').hide();
+new PeriodicalExecuter(function(){
+ if($('NextButton')){$('NextButton').show();
+ $('NextButton').click();
+ }
+ },displayTime);
