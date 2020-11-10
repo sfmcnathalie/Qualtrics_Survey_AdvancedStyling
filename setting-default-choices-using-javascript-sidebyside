@@ -1,0 +1,45 @@
+Qualtrics.SurveyEngine.addOnReady(function()
+{
+//Skill 1
+if("${e://Field/Skill1Included}" > 0) {
+jQuery('#'+this.questionId).find('tbody tr').find('.SBS2').find('input[type="checkbox"]').eq(0).prop('checked',true)
+}
+
+
+//Skill 2
+if("${e://Field/Skill2Included}" > 0) {
+jQuery('#'+this.questionId).find('tbody tr').find('.SBS2').find('input[type="checkbox"]').eq(1).prop('checked',true)
+}
+
+
+//Skill 3
+if("${e://Field/Skill3Included}" > 0) {
+jQuery('#'+this.questionId).find('tbody tr').find('.SBS2').find('input[type="checkbox"]').eq(2).prop('checked',true)
+}
+
+
+//Skill 4
+if("${e://Field/Skill4Included}" > 0) {
+jQuery('#'+this.questionId).find('tbody tr').find('.SBS2').find('input[type="checkbox"]').eq(3).prop('checked',true)
+}
+
+
+//Skill 5
+if("${e://Field/Skill5Included}" > 0) {
+jQuery('#'+this.questionId).find('tbody tr').find('.SBS2').find('input[type="checkbox"]').eq(4).prop('checked',true)
+}
+
+
+//Skill 6
+if("${e://Field/Skill6Included}" > 0) {
+jQuery('#'+this.questionId).find('tbody tr').find('.SBS2').find('input[type="checkbox"]').eq(5).prop('checked',true)
+}
+
+
+//Skill 7
+if("${e://Field/Skill7Included}" > 0) {
+jQuery('#'+this.questionId).find('tbody tr').find('.SBS2').find('input[type="checkbox"]').eq(6).prop('checked',true)
+}
+
+
+}
