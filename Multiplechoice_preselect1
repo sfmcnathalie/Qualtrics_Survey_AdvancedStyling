@@ -1,0 +1,18 @@
+/* Enter in JS Editor -  the only trick being you have to know your choice IDs. This
+code below assumes you have 4 choices, with internal IDs from 1 - 4. In the brackets put the
+answer choice you want pre-selected (Enter admin mode to make sure if the IDs).*/
+
+var questionId = this.questionId;
+
+ var choiceIds = [1];
+ for (var i=0; i < choiceIds.length; i++)
+ {
+ var choiceID = choiceIds[i];
+ try
+ {
+ this.setChoiceValue(choiceID,true);
+ }
+ catch(e)
+ {
+ }
+ }
