@@ -1,0 +1,20 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+Shows text for a specified duration (in milliseconds). The question remains, but the
+text is hidden after the time elapses. The text appears below the answers (Java script
+editor)
+*/
+
+//flash single text for specified duration
+ var text = "Write text to be displayed here";
+ var time = 1500; //time in milliseconds
+ var c = this.questionContainer;
+ var tc = QBuilder('span',{},text);
+$(tc).setStyle({color:'red',fontSize:'24pt'}); //optional to change text style
+ var ic = QBuilder('div',{},[tc]);
+ $(c).appendChild(ic);
+ (function(){
+ $(ic).clonePosition(tc); //comment this line out to remove the white space left after the
+text is hidden
+ $(tc).hide();
+ }).delay(time/1000);
