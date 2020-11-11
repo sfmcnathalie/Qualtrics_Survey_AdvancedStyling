@@ -1,0 +1,10 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+Hide the Next button until time elapses (time is in seconds) (Java script editor)
+*/
+
+var displayTime = 10;
+if($('NextButton'))$('NextButton').hide();
+ new PeriodicalExecuter(function(){
+ if($('NextButton')){$('NextButton').show();$('NextButton');}
+ },displayTime);
