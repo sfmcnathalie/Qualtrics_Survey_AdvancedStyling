@@ -1,0 +1,18 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+Shows an image in the question for a specified duration (in milliseconds). The
+question remains, but the image is hidden after the time elapses. Need to use an
+image from the web. (Java script editor)*/
+
+
+var imgURL =
+"http://survey.qualtrics.com/CP/Graphic.php?IM=IM_23twCJSuhD5Nmpm&SR=Prod";//
+replace this with your image's URL
+ var time = 2500; //time in milliseconds
+ var c = this.questionContainer;
+ var img = QBuilder('img',{src:imgURL});
+ var ic = QBuilder('div',{},[img]);
+ $(c).appendChild(ic);
+ (function(){
+ $(img).hide();
+ }).delay(time/1000);
