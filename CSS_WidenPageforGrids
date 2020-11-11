@@ -1,0 +1,8 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+To make page wider (specially for grids)
+In code view (Change 900px as required)
+*/
+<style>.Skin #SkinContent {
+width: 900px;
+} </style>
