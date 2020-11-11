@@ -1,0 +1,6 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+Text box when mouse hovers over picture (Place in answer choice or source view)*/
+
+Insert Displayed text here <br><img src="image source goes here" onclick="return
+false;" title="Insert hover text here">&nbsp;</a>
