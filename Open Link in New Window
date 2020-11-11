@@ -1,0 +1,6 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+Open link in a new window (Place in source view or answer choice)
+*/
+
+<a target="blank" href="http://url of website">link text</a>
