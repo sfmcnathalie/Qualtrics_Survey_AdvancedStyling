@@ -1,0 +1,25 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+Timed Page, skip forward
+You can use one of the codes below to automatically jump a respondent on to another
+page after a specified amount of time. Just follow the instructions below.
+1. Change the number in any of the scripts below to control how long the delay is for. For
+example:
+"this.clickNextButton().delay(30);" in the script below (time in seconds).
+2. Copy and paste that code into the Javascript Editor (purple gear button -> Add
+Javascript) of the question where you want this to occur. (Note: This only needs to be
+entered on one question on the page where you want it to automatically progress to the
+next page.)
+*/
+
+/*To hide next button and automatically move respondent on to next page.*/
+this.hideNextButton();
+this.clickNextButton.delay(30);
+
+/*To just advance with no hidden button.*/
+this.showNextButton();
+this.clickNextButton.delay(30);
+
+/*To hide the button for a specified time without automatically progressing to the next page.*/
+this.hideNextButton();
+this.showNextButton.delay(30);
