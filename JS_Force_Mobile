@@ -1,0 +1,9 @@
+/* Add to the question on a Matrix style question and it will force the answers to use mobile version even on desktop*/
+
+<script>
+Qualtrics.SurveyEngine.addOnReady(function() { 
+let element = this.questionContainer.querySelector(".QuestionBody"); 
+if(element.classList.contains('desktop')){ element.classList.remove('desktop'); 
+element.classList.add('mobile'); 
+} });
+</script>
