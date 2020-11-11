@@ -1,0 +1,9 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+Puts in a scroll box in a question (Put this in the source view)
+*/
+
+
+<div style="width: 700px; height: 250px; overflow: auto">
+This is the text that would show up in the really long question text...
+</div>
