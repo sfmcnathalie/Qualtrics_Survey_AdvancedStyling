@@ -1,0 +1,9 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+
+Sound clips (Place this in the source view or question answer)
+*/
+
+<span class='hidden'>Song 2</span> <embed
+src="http://www.freeaudioclips.com/music1/Disco_Dance/tribaldance.mid" loop="true"
+autoplay="false" width="250" height="16"></embed>
