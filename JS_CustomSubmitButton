@@ -1,0 +1,19 @@
+/*Type the following in the last question – HTML view.*/
+
+<script type="text/javascript">
+Event.observe(window, 'load', function(){
+var newName = 'Submit';
+if ($('NextButton').nodeName == 'INPUT')
+{
+ $('NextButton').setValue(newName);
+}
+else if ($('NextButtonText').nodeName == 'SPAN')
+{
+ $('NextButtonText').innerHTML = newName;
+}
+else // next button is probably a button
+{
+ $('NextButton').innerHTML = newName;
+}
+});
+</script>
