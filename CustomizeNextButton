@@ -1,0 +1,12 @@
+/*Customizes the next button text on any page in your survey. Helpful for making a
+"different first page" or final submit button. (Java script editor)*/
+
+var newName = 'Submit'; //What you want your button to say
+if ($('NextButton').nodeName == 'INPUT')
+{
+ $('NextButton').setValue(newName);
+}
+else // next button is probably a button
+{
+ $('NextButton').innerHTML = newName;
+}
