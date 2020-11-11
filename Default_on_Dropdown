@@ -1,0 +1,17 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+Default answer selected on a dropdown. (Java script editor)
+*/
+
+if($('QID17'))
+{
+$$('#QID17 select').each(function(s){
+s.value = (s[s.length-2].value);
+})
+}
+
+/*QID - insert the question ID# (Most likely you will have to switch to the classic editor to
+find the QID. The QID may be different than the one to the left of your question in the
+quick survey builder.)
+s.length is the position of the choice (counting from the bottom)
+*/
