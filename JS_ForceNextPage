@@ -1,0 +1,9 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+Force to next page, but user can click button to move earlier (Java script editor)
+*/
+
+var displayTime = 2;
+new PeriodicalExecuter(function(){
+if($('NextButton'))$('NextButton').click();
+},displayTime);
