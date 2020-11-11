@@ -1,0 +1,8 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+To hide Next button and Back button
+In JavaScript
+*/
+
+this.hideNextButton();
+this.hidePreviousButton();
