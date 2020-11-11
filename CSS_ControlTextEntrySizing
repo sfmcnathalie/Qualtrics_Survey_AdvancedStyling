@@ -1,0 +1,12 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+Change Text Entry Box
+Please insert it into the code view. You may want to edit the numbers to format the box to
+the correct size.
+*/
+
+<style>
+.Skin .QuestionBody .TextEntryBox {
+height:10em;
+width:38em;
+</style>
