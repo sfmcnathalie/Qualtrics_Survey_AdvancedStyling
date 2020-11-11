@@ -1,0 +1,18 @@
+/*Select all choices by default (start with all choices selected) (Java script editor)
+Checks all choices when question appears, and the user has to uncheck all choices they
+want unchecked. This code assumes a multiple choice question.*/
+
+var questionId = this.questionId;
+
+ var choiceInputs = $$('#'+this.questionId + ' .ChoiceStructure input');
+ for (var i=0; i < choiceInputs.length; i++)
+ {
+ var choiceInput = choiceInputs[i];
+ try
+ {
+ choiceInput.checked = true;
+ }
+ catch(e)
+ {
+ }
+ }
