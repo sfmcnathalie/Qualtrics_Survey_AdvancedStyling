@@ -1,0 +1,13 @@
+/*
+This code allows them to click on an image in the answer and a pop up window
+with a redirect will open. Change the pop up link and the image source link. The
+image will be from your library and you can find the source link by putting the
+image in while in the rich text editor and then using the “source” button to get the
+source link. (Place this code in the source view)
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+*/
+
+<a href="http://www.google.com"_blank"
+onclick="window.open(this.href,'','resizable=no,location=no,menubar=no,scrollbars=no,status=n
+o,toolbar=no,fullscreen=no,dependent=no,status'); return false"><img src="Image source goes
+here" width="50" height="50" border="0"> </a>
