@@ -1,0 +1,10 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+Make text box smaller (Place this in the code view of question)
+*/
+
+<style type="text/css">
+.Skin .TE textarea, .Skin .TE input {
+width:55px;
+}
+</style>
