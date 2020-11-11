@@ -1,0 +1,18 @@
+/* In JS Editor --  use this code, assuming it's a multiple choice question, that
+grabs the choices dynamically, but you cannot have full control in cases where you want 
+to select say half of them by default. This will automatically check all the options.*/
+
+var questionId = this.questionId;
+
+ var choiceInputs = $$('#'+this.questionId + ' .ChoiceStructure input');
+ for (var i=0; i < choiceInputs.length; i++)
+ {
+ var choiceInput = choiceInputs[i];
+ try
+ {
+ choiceInput.checked = true;
+ }
+ catch(e)
+ {
+ }
+ }
