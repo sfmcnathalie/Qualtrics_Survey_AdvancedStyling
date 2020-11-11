@@ -1,0 +1,9 @@
+/*
+Found via Princeton-https://psrc.princeton.edu/sites/psrc/files/html_tips_tricks.pdf
+Click on image, and text appears below (Place in source view or answer choice)
+*/
+
+<img title="image title" onclick="$('divID').toggle();" alt="" src="Image source goes 
+here">
+<div id="divID" style="display: none;"> insert your text here </div>
+<br>
