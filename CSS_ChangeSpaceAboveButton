@@ -1,0 +1,5 @@
+/*Put in the Look & Feel Section under Header for global application or in last question HTML for that page's button only*/
+
+<style>
+.Skin #Buttons { margin-top:5px; padding-top:5px }
+</style>
