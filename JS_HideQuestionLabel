@@ -1,0 +1,8 @@
+/*Hide question label -- used when you want to add a checkbox at the end of a form field question*/
+
+Qualtrics.SurveyEngine.addOnload(function()
+{
+	/*Place your JavaScript here to run when the page loads*/
+	jQuery("#"+this.questionId+" .QuestionText").hide();
+
+});
