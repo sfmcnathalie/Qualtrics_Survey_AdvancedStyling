@@ -1,4 +1,5 @@
 /*Hide question label -- used when you want to add a checkbox at the end of a form field question*/
+/*Found on https://www.qualtrics.com/community/discussion/3427/disabling-question-labels */
 
 Qualtrics.SurveyEngine.addOnload(function()
 {
