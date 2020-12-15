@@ -1,0 +1,50 @@
+.Skin #Wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -480px;
+}
+.Skin .SkinInner {
+padding-top: 5px;
+}
+.Skin #Plug {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.Skin .Separator {
+margin:0px 5px;
+}
+.Skin .QuestionBody {
+padding-bottom: -50px !important;
+padding-left: 5px !important;
+padding-right: 5px !important;
+}
+.Skin #LogoContainer {
+padding: 0 0px;
+padding-top: -50px;
+}
+.Skin .QuestionText {
+font-size: 100%;
+padding: 0px;
+}
+.Skin .QuestionBody {
+padding:0px 0px 0px 0px;
+}
+.Skin #Plug a {
+
+color: #FFFFFF;
+}
+.Skin #Plug a {
+
+font-size: 0px;
+color: #FFFFFF;
+text-decoration: none;
+padding: 0px 0px;
+}
+
+.Skin #PushStickyFooter {
+height: 0px;
+}
+.Skin #BrandingFooter, .Skin #Footer {
+margin-top: 0px;
+}
